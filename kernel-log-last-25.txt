@@ -1,0 +1,26 @@
+-- Logs begin at Fri 2019-04-05 07:47:10 PDT, end at Fri 2019-04-05 15:52:09 PDT. --
+Apr 05 07:47:14 localhost.localdomain kernel: RPC: Registered udp transport module.
+Apr 05 07:47:14 localhost.localdomain kernel: RPC: Registered tcp transport module.
+Apr 05 07:47:14 localhost.localdomain kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Apr 05 07:47:15 localhost.localdomain kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+Apr 05 07:47:15 localhost.localdomain kernel: Bluetooth: BNEP filters: protocol multicast
+Apr 05 07:47:15 localhost.localdomain kernel: Bluetooth: BNEP socket layer initialized
+Apr 05 07:47:15 localhost.localdomain kernel: NET: Registered protocol family 40
+Apr 05 14:47:17 localhost.localdomain kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+Apr 05 14:47:17 localhost.localdomain kernel: e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+Apr 05 14:47:17 localhost.localdomain kernel: IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+Apr 05 14:47:17 localhost.localdomain kernel: IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+Apr 05 14:47:19 localhost.localdomain kernel: Bluetooth: RFCOMM TTY layer initialized
+Apr 05 14:47:19 localhost.localdomain kernel: Bluetooth: RFCOMM socket layer initialized
+Apr 05 14:47:19 localhost.localdomain kernel: Bluetooth: RFCOMM ver 1.11
+Apr 05 14:47:19 localhost.localdomain kernel: fuse init (API version 7.27)
+Apr 05 14:47:22 localhost.localdomain kernel: rfkill: input handler disabled
+Apr 05 14:47:24 localhost.localdomain kernel: [drm:vmw_stdu_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
+Apr 05 14:49:03 localhost.localdomain kernel: rfkill: input handler enabled
+Apr 05 14:49:07 localhost.localdomain kernel: rfkill: input handler disabled
+Apr 05 14:49:09 localhost.localdomain kernel: [drm:vmw_stdu_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
+Apr 05 14:49:11 localhost.localdomain kernel: ISO 9660 Extensions: Microsoft Joliet Level 3
+Apr 05 14:49:11 localhost.localdomain kernel: ISO 9660 Extensions: RRIP_1991A
+Apr 05 14:49:31 localhost.localdomain kernel: Bluetooth: hci0: last event is not cmd complete (0x0f)
+Apr 05 14:49:47 localhost.localdomain kernel: Bluetooth: hci0: last event is not cmd complete (0x0f)
+Apr 05 14:50:03 localhost.localdomain kernel: Bluetooth: hci0: last event is not cmd complete (0x0f)

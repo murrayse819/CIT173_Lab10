@@ -1,0 +1,215 @@
+    1  ls
+    2  mkdir CIT173_Lab10
+    3  ls
+    4  cd CIT173_Lab10/
+    5  man tail
+    6  tail --help
+    7  ls
+    8  tail -n 25 /var/log/messages
+    9  cd /
+   10  ls
+   11  ls var
+   12  ls /var/log
+   13  ls /var/log/journal
+   14  ls sys
+   15  ls /sys/kernel
+   16  cat /etc/sysconfig
+   17  cat /etc/sysconfig/rsyslog
+   18  ls /etc/sysconfig
+   19  ls etc
+   20  ls /etc/sysconfig
+   21  ls 
+   22  ls root
+   23  sudo ls root
+   24  ls var
+   25  ls /var/log
+   26  cd ~/
+   27  ls
+   28  cd ..
+   29  ls
+   30  cd ..
+   31  ls
+   32  ls /etc
+   33  ls /var
+   34  ls /var/log
+   35  tail -n 25 journalctl
+   36  man journalctl
+   37  journalctl
+   38  journalctl -n 25
+   39  cd
+   40  ls
+   41  cd CIT173_Lab10/
+   42  man journalctl
+   43  journalctl -n 25 kernal
+   44  journalctl -n 25 kernel
+   45  journalctl -n 25 Kernel
+   46  journalctl Kernel
+   47  man journalctl 
+   48  journalctl -n 25 -k
+   49  journalctl -n 25 -k > kernel-log-last-25.txt
+   50  ls
+   51  cat kernel-log-last-25.txt 
+   52  man logger
+   53  logger test
+   54  journalctl -n 10
+   55  logger Help! I've fallen and I can't get up!
+   56  journalctl -n 10
+   57  journalctl -n 5
+   58  journalctl -n 1
+   59  journalctl -n 1 > my-system-log.txt
+   60  cat my-system-log.txt 
+   61  ls /
+   62  ls /sys
+   63  ls /etc
+   64  ls /etc/systemd
+   65  cp /etc/systemd/journald.conf ~/CIT173_Lab10/my-system-log.txt
+   66  ls
+   67  cat my-system-log.txt | less
+   68  ls
+   69  journalctl -n 1 > my-system-log.txt
+   70  journalctl -n 1
+   71  cat my-system-log.txt 
+   72  ls /etc/systemd
+   73  echo "Help! I've fallen and I can't get up!" 
+   74  echo "Help! I've fallen and I can't get up!" | logger
+   75  echo "Help! I've fallen and I can't get up!" | systemd-cat
+   76  journalctl -n 5
+   77  echo "Hello" | systemd-cat -p emerg
+   78  journalctl -n 5
+   79  journalctl -n 25
+   80  logger Help! I've fallen and I can't get up!
+   81  ls
+   82  journalctl
+   83  journalctl > my-system-log.txt
+   84  ls
+   85  cat my-system-log.txt | less
+   86  cp /etc/systemd/journald.conf ~/CIT173_Lab10/journald.conf
+   87  ls
+   88  vim /etc/systemd/journald.conf 
+   89  ls
+   90  man yum
+   91  yum install syslogd
+   92  sudo yum install syslogd
+   93  exit
+   94  LS
+   95  ls
+   96  cd CIT173_Lab10/
+   97  sudo yum sysklogd
+   98  man DNF
+   99  yum install sysklogd
+  100  sudo yum install sysklogd
+  101  man syslogd
+  102  vim /etc/systemd/journald.conf 
+  103  sudo vim /etc/systemd/journald.conf 
+  104  ls /etc
+  105  shutdown now
+  106  ls
+  107  ls /etc
+  108  ls /etc/systemd
+  109  cat /etc/systemd/journald.conf 
+  110  man journald
+  111  man systemd
+  112  shutdown now
+  113  history
+  114  ls
+  115  ls /etc
+  116  history
+  117  logger Help I've fallen, and I can't get up!
+  118  journalctl -n 25
+  119  ls /etc
+  120  sudo vi /etc/systemd/journald.conf 
+  121  systemctl restart systemd-journald
+  122  sudo yum -y install rsyslog
+  123  ls /etc
+  124  ls /etc/systemd
+  125  ls /etc
+  126  cat rsyslog.comf | less
+  127  cat /etc/rsyslog.conf | less
+  128  systemctl enable rsyslog
+  129  sudo systemctl start rsyslog
+  130  sudo shutdown now
+  131  ls /etc
+  132  sudo systemctl status rsyslog.service 
+  133  ps -A
+  134  ps -A | grep rsys
+  135  sudo vi /etc/rsyslog.conf 
+  136  ls /var/log
+  137  sudo systemctl restart rsyslog.service 
+  138  ls /var/log
+  139  sudo vi /etc/rsyslog.conf 
+  140  ls /var/log
+  141  shutdown now
+  142  ls /var/log
+  143  cat /var/log/all-info.log | less
+  144  sudo cat /var/log/all-info.log | less
+  145  sudo cat /var/log/all-warnings.log | less
+  146  man cp
+  147  sudo cp /var/log/all-info.log ~/CIT173_Lab10/
+  148  ls
+  149  cd
+  150  cd /
+  151  ls
+  152  cd
+  153  cd /CIT173_Lab10
+  154  sudo cd /CIT173_Lab10
+  155  cd
+  156  ls
+  157  cd CIT173_Lab10/
+  158  ls
+  159  cd
+  160  sudo cp /var/log/all-warnings.log ~/CIT173_Lab10/
+  161  ls CIT173_Lab10/
+  162  man rtc
+  163  cd CIT173_Lab10/
+  164  cat all-info.log 
+  165  sudo cat all-info.log 
+  166  man rtc
+  167  sudo hwclock -r
+  168  sudo hwclock -w
+  169  hwclock -r
+  170  cat hwclock
+  171  man hwclock
+  172  date
+  173  date -set="01 Jan 2019 00:00:00"
+  174  date --set="01 Jan 2019 00:00:00"
+  175  sudo date --set="01 Jan 2019 00:00:00"
+  176  sudo date --set="01 Jan 1970 00:00:00"
+  177  date
+  178  sudo yum install -y ntpd
+  179  ls /etc/ntp.conf
+  180  sudo yum install ntpd
+  181  sudo yum install ntp
+  182  sudo yum install -y ntp
+  183  cd
+  184  sudo yum install -y ntp
+  185  ifconfig
+  186  sudo yum install ntp
+  187  sudo yum update
+  188  shutdown now
+  189  date
+  190  sudo date --set="01 Jan 1970 00:00:00"
+  191  date
+  192  sudo vim /etc/ntp.conf
+  193  sudo systemctl enable ntpd
+  194  sudo systemctl start ntpd
+  195  sudo systemctl status ntpd
+  196  date
+  197  sudo date --set="13 Apr 2019 00:00:00"
+  198  sudo systemctl start ntpd
+  199  sudo systemctl status ntpd
+  200  date
+  201  sudo service ntp reload
+  202  sudo service ntpd reload
+  203  ps
+  204  ps -A | grep ntp
+  205  ps 2715
+  206  date
+  207  sudo date --set="01 Jan 2019 00:00:00"
+  208  sudo systemctl restart ntpd
+  209  date
+  210  sudo systemctl status ntpd
+  211  date
+  212  cp /etc/ntp.conf ~/CIT173_Lab10/
+  213  ls
+  214  ls CIT173_Lab10/
+  215  history > ~/CIT173_Lab10/ex2-command-history.txt
